@@ -1,0 +1,30 @@
+{
+  "name": "next-redux-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "@vercel/analytics": "^1.1.1",
+    "date-fns": "^2.30.0",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-redux": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/redux-logger": "^3.0.12",
+    "eslint": "^8",
+    "eslint-config-next": "^14.0.4",
+    "redux-logger": "^3.0.6",
+    "typescript": "^5.3.3"
+  }
+}
