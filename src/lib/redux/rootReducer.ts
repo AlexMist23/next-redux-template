@@ -1,9 +1,6 @@
 /* Instruments */
-import {
-  templateSlice,
-} from "./slices";
+import { themeSlice } from "./slices";
 
 export const reducer = {
-  template: templateSlice.reducer,
-
+  theme: themeSlice.reducer,
 };

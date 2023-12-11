@@ -5,9 +5,6 @@ import { Inter } from "next/font/google";
 /* Instruments */
 import { Providers } from "@/lib/providers";
 
-/* Components */
-import { Nav } from "@/components";
-
 /* CSS */
 import "@/styles/globals.css";
 
@@ -27,10 +24,7 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en">
-        <body className={inter.className}>
-          <Nav />
-          <main>{children}</main>
-        </body>
+        <body className={inter.className}>{children}</body>
       </html>
     </Providers>
   );

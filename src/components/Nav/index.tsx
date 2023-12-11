@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 /* CSS */
 import styles from "./nav.module.css";
 
-export const Nav = () => {
+export default function Nav() {
   const pathname = usePathname();
 
   const navItems = [
@@ -31,4 +31,4 @@ export const Nav = () => {
       ))}
     </nav>
   );
-};
+}
