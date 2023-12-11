@@ -11,9 +11,9 @@ export default function Nav() {
   const pathname = usePathname();
 
   const navItems = [
-    { path: "/verify", label: "Home" },
-    { path: "/verify", label: "About" },
-    { path: "/verify", label: "Contact" },
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (

@@ -1,4 +1,4 @@
 /* Instruments */
 import type { ReduxState } from "@/lib/redux";
 
-export const selectForecast5 = (state: ReduxState) => state.themeSlice;
+export const selectTheme = (state: ReduxState) => state.theme.theme;
