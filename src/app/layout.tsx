@@ -6,14 +6,14 @@ import { Inter } from "next/font/google";
 import { Providers } from "@/lib/providers";
 
 /* CSS */
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 
 const inter = Inter({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "<Placeholder>", // TODO!
+  title: "<Placeholder>",
 };
 
 export default function RootLayout({
@@ -22,10 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Providers>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </Providers>
+    <html suppressHydrationWarning lang="en">
+      <body className={inter.className}>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
   );
 }

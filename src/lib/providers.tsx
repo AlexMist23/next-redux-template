@@ -1,12 +1,14 @@
 "use client";
 
-/* Core */
-import { Provider, useSelector } from "react-redux";
+import { Provider as ReduxProvider } from "react-redux";
+import { ThemeProvider } from "next-themes";
 
-/* Instruments */
-import { reduxStore, selectTheme } from "@/lib/redux";
+import { reduxStore } from "@/lib/redux";
 
-export const Providers = (props: React.PropsWithChildren) => {
-  const theme = useSelector(selectTheme);
-  return <Provider store={reduxStore}>{props.children}</Provider>;
+export const Providers = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <ReduxProvider store={reduxStore}>
+      <ThemeProvider>{children}</ThemeProvider>
+    </ReduxProvider>
+  );
 };

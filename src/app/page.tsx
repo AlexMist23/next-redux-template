@@ -6,6 +6,9 @@ import styles from "@/styles/page.module.css";
 
 /* Components */
 
+/* CSS */
+import variables from './variables.module.scss'
+
 export default function Home() {
   return (
     <main>
