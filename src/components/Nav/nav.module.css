@@ -1,9 +1,44 @@
 .nav {
+  width: 100%;
+  height: fit-content;
+  padding: 0 1rem;
   display: flex;
-  font-size: 1.5em;
-  gap: 2em;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: end;
+  margin: auto;
+  width: 100%;
 }
 
 .link {
   text-align: center;
+  padding: 1rem;
+}
+.link:active {
+  filter: brightness(0.75);
+}
+
+.logoContainer {
+  font-size: 1.33rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.button {
+  justify-self: end;
+  margin: 0 0 0 auto;
+  flex-shrink: 0;
+  width: 4rem;
+  cursor: pointer;
+}
+.button:hover {
+  filter: brightness(1.5);
+}
+
+.button:active {
+  filter: brightness(1);
 }

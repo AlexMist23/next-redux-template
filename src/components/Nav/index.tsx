@@ -18,17 +18,23 @@ export default function Nav() {
 
   return (
     <nav className={styles.nav}>
-      {navItems.map((item, index) => (
-        <Link
-          key={index}
-          href={item.path}
-          className={`${styles.link} ${
-            pathname === item.path ? styles.active : ""
-          }`}
-        >
-          {item.label}
-        </Link>
-      ))}
+      <div className={styles.logoContainer}>
+        <p>App Name</p>
+      </div>
+      <ul className={styles.links}>
+        {navItems.map((item, index) => (
+          <Link
+            key={index}
+            href={item.path}
+            className={`${styles.link} ${
+              pathname === item.path ? styles.active : ""
+            }`}
+          >
+            {item.label}
+          </Link>
+        ))}
+      </ul>
+      <button className={styles.button}>Sign In</button>
     </nav>
   );
 }
