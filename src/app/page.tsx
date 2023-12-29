@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Nav/>
-      <h1>Contact</h1>
+      <h1>Home</h1>
       <p>
         This page is intended to verify that Redux state is persisted across
         page navigations.

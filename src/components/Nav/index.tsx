@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 /* CSS */
 import styles from "./nav.module.css";
+import ThemesMenu from '@/components/ThemesMenu';
 
 export default function Nav() {
   const pathname = usePathname();
@@ -34,6 +35,7 @@ export default function Nav() {
           </Link>
         ))}
       </ul>
+      <ThemesMenu />
       <button className={styles.button}>Sign In</button>
     </nav>
   );

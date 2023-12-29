@@ -1,0 +1,23 @@
+[data-theme="light"] .nav {
+}
+
+[data-theme="dark"] .div {
+}
+
+
+.div{
+    background: none;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg {
+    filter: var(--svg-filter);
+    padding: 0.25em;
+}

@@ -1,25 +1,31 @@
+[data-theme="light"] .nav {
+  background-color: var(--white);
+  outline: 0.1rem solid var(--primary-color);
+}
+
+[data-theme="dark"] .nav {
+  background-color: #000;
+}
+
 .nav {
   width: 100%;
   height: fit-content;
   padding: 0 1rem;
   display: flex;
-  background: rgba(0, 0, 0, 0.4);
   align-items: center;
+  gap: 0.5rem;
 }
 
 .links {
   display: flex;
-  justify-content: end;
-  margin: auto;
+  justify-content: flex-end;
+  margin: auto auto auto -3rem;
   width: 100%;
 }
 
 .link {
   text-align: center;
   padding: 1rem;
-}
-.link:active {
-  filter: brightness(0.75);
 }
 
 .logoContainer {
@@ -34,11 +40,4 @@
   flex-shrink: 0;
   width: 4rem;
   cursor: pointer;
-}
-.button:hover {
-  filter: brightness(1.5);
-}
-
-.button:active {
-  filter: brightness(1);
 }

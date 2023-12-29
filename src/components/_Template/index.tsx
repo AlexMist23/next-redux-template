@@ -4,7 +4,6 @@ interface Props {
   data?: string;
 }
 
-export const Template = ({ data }: Props) => {
-  return <>
-  </>;
-};
+export default function Template({ data }: Props) {
+  return <></>;
+}

@@ -1,33 +1,29 @@
 :root {
-  color-scheme: light;
   --white: #fbfbfe;
+  --white-light: #e9e9ed;
   --black: #1c1b22;
   --purple: #a61c3c;
   --purple-light: #de3f64;
   --yellow: #f4ac45;
 
-  --border-radius: 1rem;
+  --border-radius: 0.2rem;
 }
 
 [data-theme="light"] {
-  color-scheme: light;
   --primary-color: var(--purple);
-
+  --svg-filter: invert(8%) sepia(13%) saturate(894%) hue-rotate(209deg)
+    brightness(94%) contrast(92%);
   body {
     background-color: var(--white);
   }
 }
 
 [data-theme="dark"] {
-  color-scheme: dark;
   --primary-color: var(--purple-light);
-
+  --svg-filter: invert(87%) sepia(22%) saturate(19%) hue-rotate(205deg)
+    brightness(107%) contrast(101%);
   body {
     background-color: var(--black);
-  }
-
-  a {
-    color: var(--primary-color);
   }
 
   button {
@@ -48,11 +44,15 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--primary-color);
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:active {
+    filter: brightness(0.75);
   }
 }
 ul {
@@ -60,6 +60,7 @@ ul {
 }
 
 button {
+  cursor: pointer;
   border: none;
   padding: 0.5rem;
   border-radius: var(--border-radius);
