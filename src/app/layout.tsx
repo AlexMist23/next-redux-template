@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 /* Instruments */
 import { Providers } from "@/lib/providers";
+import { SessionProvider } from "next-auth/react"
 
 /* CSS */
 import "@/styles/globals.css";
